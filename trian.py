@@ -1,19 +1,15 @@
 class Triangle(object):
-    def __init__(self, a, b, c):
-        self.a = int(a)
-        self.b = int(b)
-        self.c = int(c)
-
-    def area(self):
+    def __init__(self):
+        pass
+    def area(self, a, b, c):
         w = (self.a + self.b + self.c) // 2
-        k = (w * (w - self.a) * (w - self.b) * (w - self.c)) ** 0.5
-        return k
+        return (w * (w - self.a) * (w - self.b) * (w - self.c)) ** 0.5
 
-    def perimeter(self):
-        q = (self.a + self.b + self.c)
-        return q
+    def perimeter(self, a, b, c):
+        (self.a + self.b + self.c)
+        return (self.a + self.b + self.c)
 
-    def kind(self):
+    def kind(self, a, b, c):
         if self.a + self.b <= self.c or self.a + self.c <= self.b or self.b + self.c <= self.a:
             return print("Triangle not exist")
         elif self.a != self.b and self.a != self.c and self.b != self.c:
@@ -26,9 +22,9 @@ class Triangle(object):
             return print("Isosceles")
 
 
-a = int(input())
-b = int(input())
-c = int(input())
-q = Triangle(a, b, c)
-w = Triangle(a, b, c)
-k = Triangle(a, b, c)
+#a = int()
+#b = int()
+#c = int()
+#print("Area =", area())
+#print("Perimeter =", perimeter)
+#print(kind())
