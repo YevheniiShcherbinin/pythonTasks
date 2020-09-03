@@ -1,12 +1,12 @@
 class Triangle(object):
     def __init__(self):
         pass
+
     def area(self, a, b, c):
         w = (self.a + self.b + self.c) // 2
         return (w * (w - self.a) * (w - self.b) * (w - self.c)) ** 0.5
 
     def perimeter(self, a, b, c):
-        (self.a + self.b + self.c)
         return (self.a + self.b + self.c)
 
     def kind(self, a, b, c):
@@ -25,6 +25,7 @@ class Triangle(object):
 #a = int()
 #b = int()
 #c = int()
-#print("Area =", area())
-#print("Perimeter =", perimeter)
-#print(kind())
+#print("Area =", area.Triangle())
+#print("Perimeter =", perimeter.Triangle)
+#print("Kind =", kind.Triangle())
+
