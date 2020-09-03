@@ -12,3 +12,8 @@ CONFIG_PROPERTIES = {}
 try:
     with open(JSON_CONFIG_FILE_PATH) as data_file:
         CONFIG_PROPERTIES = json.load(data_file)
+except IOError as e:
+    print e
+    print 'IOError: Unable to open config.json. Terminating excution.'
+    exit(1)
+
