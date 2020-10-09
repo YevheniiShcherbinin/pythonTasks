@@ -1,5 +1,6 @@
 import random
 
+
 arr = []
 for i in range(1000):
     arr.append(random.randint(-1000, 1000))
